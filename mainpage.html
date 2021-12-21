@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meta Guard</title>
+    <link rel="stylesheet" href="./mainpage.css">
+</head>
+<body>
+    <nav id="nav">
+        <ul class="left-ul">
+            <li><a href="">Meta Guard</a></li>
+     </ul>
+
+     <button id="update-view" onclick="document.getElementById('update-box').style.display='block'" style="width:auto;" class="update-account">Update Account</button>
+    <button id="delete-view" onclick="document.getElementById('delete-box').style.display='block' " class="delete-account">Delete Account</button>   
+    <button id="logout" onclick="logout()">Logout</button>
+</nav>
+<div class="delete-box" id="delete-box">
+    <form action="delete.php" method="post" id="delete">
+        <label for="confirmPassword">Email or Phone Number:</label>
+        <input type="text" id="phoneoremail" name="phoneoremail" placeholder="Enter Email">
+        <button type="submit" value="Delete Account" class="delete-account-delete" >Delete Account</button>
+        
+    </form>
+</div>
+
+<div class="update-box" id="update-box">
+    <form method="post" action="update.php" id="update">
+
+        <label for="newPassword">Email or Phone Number:</label>
+        <input type="text" id="newPassword" name="phoneoremail" title="New password" placeholder="Enter Email" />  
+
+        <label for="confirmPassword">New Password:</label>
+        <input type="password" id="confirmPassword" name="password" title="Confirm new password" placeholder="Enter New Password"/>
+
+
+        <button type="submit" value="Change Password" title="Change password" class="update-account">Update Account</button>
+    </form>
+</div>
+
+
+<h3 id="struggle-title"> <b> Share Your <br> Struggles And
+<br> Let Out Your Stress</b> </h3>
+
+<div class="clicker_game">
+<p id="value"></p>
+
+<button id="fun_btn" onclick="fun()" >Let out Your Stress! </button>
+
+</div>
+<h2 id="text-title">Type out Your Struggles Below</h2>
+    <textarea name="description" id="detail" placeholder="Type Out Your Stress "></textarea>
+
+
+<script>
+const button = document.getElementById("fun_btn");
+
+const value = document.getElementById("value");
+
+var num=0;
+    button.onclick=()=>{
+    value.innerHTML=num;
+num++;
+}
+
+function logout(){
+    window.location.href = "./homepage.html";
+}
+
+</script>
+</body>
+</html>

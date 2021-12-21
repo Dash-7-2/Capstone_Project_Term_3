@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: lightgreen;
+    font-weight: 400;
+    font-family: Verdana, Tahoma, sans-serif;
+    
+}
+
+nav#nav {
+    width: 100%;
+    height: 70px;
+    background: var(--navBg);
+    line-height: 70px;
+    padding: 0 180px;
+    display: flex;
+    background-color: teal;
+}
+
+.left-ul li {
+    list-style: none;
+}
+
+.left-ul li a {
+    color: var(--colorWhite);
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.right-ul {
+    display: flex;
+}
+
+.right-ul li {
+    list-style: none;
+}
+
+.empty {
+    margin: 0 auto;
+}
+
+.nav-control {
+    height: 33px;
+    padding: 0 10px;
+    border-radius: 3px;
+    border: 0px;
+    margin-right: 10px;
+}
+
+.nav-btn {
+    display: inline-block;
+    height: 33px;
+    padding: 0 10px;
+    border-radius: 3px;
+    background-color: rgb(3, 48, 3);
+    color: white;
+    border: 0px;
+}
+
+.nav-button {
+    display: inline-block;
+    height: 18px;
+    padding: 0 10px;
+    border-radius: 3px;
+    background: rgba(68, 127, 255, 0.596);
+    color: white;
+    border: 0px;
+    margin-left: 10px;
+    margin-top: 27px;
+    list-style-type: none;
+
+}
+
+#text-btn{
+     background-color: #0099ff;
+     border: none;
+     color: rgb(0, 0, 0);
+     position: relative;
+     bottom: 180px;
+     left: 1000px;
+     font-size: 16px;
+     cursor: pointer;
+     height: 50px;
+     width: 200px;
+     font-family: 'Gill Sans',
+     'Gill Sans MT',
+     'Trebuchet MS',
+     sans-serif;
+}
+
+.login-square {
+    position: absolute;
+    left: 1050px;
+    top: 200px;
+    width: 250px;
+    height: 400px;
+    border: 1px solid black;
+    box-shadow: 3px;
+    background-color: yellow;
+    align-items: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+input[type="text"] {
+    padding: 0px 0px 0px 21px;
+    width: 884px;
+    height: 49px;
+    color: #828282;
+    font-size: 18px;
+    line-height: 25px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+label {
+    color: aqua;
+    text-decoration: underline;
+
+}
+
+#update {
+    display: hidden;
+
+}
+
+#update-view {
+    position: relative;
+    left: 840px;
+}
+
+input[type=text]:focus,
+input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+.update-account {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 300px;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+.update-box {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #474e5d;
+    padding-top: 50px;
+}
+
+.update {
+    float: left;
+    width: 50%;
+}
+
+.update {
+    position: relative;
+    left: 300px;
+}
+
+#struggle-title{
+    text-decoration: underline;
+    display: inline-block;
+    font-size: 60px;
+    margin: 50px;
+}
+
+.clicker_game{
+    width: 100px;
+    height: 100px;
+}
+
+#fun_btn{
+      background-color: #1eff00;
+      border: none;
+      color: rgb(0, 0, 0);
+      position: relative;
+      top: 100px;
+      left: 200px;
+      font-size: 16px;
+      cursor: pointer;
+      height: 50px;
+      width: 200px;
+      font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+
+
+#value{
+    font-size: 40px;
+    position: relative;
+    text-decoration: solid underline;
+    left: 280px;
+    top: 100px;
+    color: #a12dc4;
+}
+#text-title{
+    text-decoration: solid rgb(250, 127, 12);
+    position: relative;
+    left: 870px;
+    bottom: 180px;
+}
+
+textarea{
+    position: relative;
+    left: 900px;
+    bottom: 180px;
+    height: 200px;
+    width: 300px;
+    background-color: #474e5d;
+    color: white;
+}
+
+#delete-box{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #474e5d;
+    padding-top: 50px;
+}
+
+.delete-account-delete{
+        background-color: #ff060688;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: solid rgb(255, 0, 0);
+        cursor: pointer;
+        width: 100%;
+        opacity: 0.9;
+        font-size: 50px;
+}
+
+#delete {
+    display: hidden;
+
+}
+
+.delete {
+    float: left;
+    width: 50%;
+}
+
+.delete {
+    position: relative;
+    left: 300px;
+}
+
+.delete-account {
+    background-color: #aa0404;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 150px;
+    opacity: 0.9;
+    position: relative;
+    left: 480px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+#logout{
+    background-color: #04aa9c;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 150px;
+    opacity: 0.9;
+    position: relative;
+    left: 100px;
+}
+
+
+@media screen and (max-width: 300px) {
+    body {
+        width: 100%;
+    }
+}
+
+
